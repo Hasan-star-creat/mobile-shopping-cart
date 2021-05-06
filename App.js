@@ -60,7 +60,7 @@ function updateQty(id,value){
     document.getElementById('vat').innerText = vat.toFixed(2)
     
      const total = parseFloat(subTotal) + vat;
-    document.getElementById('total').innerText = total.toFixed(2);
+    document.getElementById('total').innerText = Math.round(total);
    }
 
   
